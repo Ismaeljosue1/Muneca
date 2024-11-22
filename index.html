@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de ejemplo estilo red social">
+    <title>Muñeca</title>
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/1176535442703794319/1299010922462838865/image.png?ex=671cf732&is=671ba5b2&hm=7800aea9b0df1df2b6993b662cbf4019da406419a08d1772936ebb7f48bede03&.png" type="image/png">
+</head>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ebee;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4267B2;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px 20px;
+            background-color: #3b5998;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        .container {
+            display: none;
+            justify-content: center;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .visible {
+            display: flex;
+        }
+
+        .section {
+            width: 80%;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+
+        .catalog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .product-card h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .product-card p {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .product-card span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        footer {
+            background-color: #3b5998;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Muñeca (Caspmec)</h1>
+    </header>
+
+    <nav>
+        <a onclick="showSection('inicio')">Inicio</a>
+        <a onclick="showSection('catalogo')">Catálogo</a>
+        <a onclick="showSection('contacto')">Contáctanos</a>
+    </nav>
+
+<div id="inicio" class="container visible">
+    <div class="section">
+        <!-- Nombre del proyecto -->
+        <h1 style="text-align: center; font-size: 2.5em; margin-bottom: 20px;">Muñeca</h1>
+        
+        <!-- Bienvenida -->
+        <img src="https://imgur.com/BZS0LFa.png" 
+             alt="Logo de Muñeca" 
+             style="width: 250px; margin: 20px 0;">
+             
+        <!-- Párrafos con espacio entre ellos -->
+        <p style="margin-bottom: 20px;">
+            Muñeca es un emprendimiento que busca plasmar conceptos abstractos: las emociones, los sentimientos y los recuerdos, 
+            a través de una simbología que represente un vínculo especial entre las personas. 
+            Por ello, elaboramos pulseras de hilo chino tejidas a mano, para que así puedas recordar los momentos 
+            que compartas con aquellos que más quieras.
+        </p>
+
+        <p style="margin-bottom: 20px;">
+            Somos un proyecto formado por tres estudiantes de la Unidad Educativa "Juan de Salinas" y operamos desde junio del 2023.
+        </p>
+
+        <p style="margin-bottom: 20px;">
+            Las pulseras que elaboramos son de hilo chino de 1mm, y son tejidas a mano para dar un toque artesanal, 
+            aportando un valor cultural único a cada una de nuestras piezas.
+        </p>
+
+        <p style="margin-bottom: 20px;">
+            Te invitamos a formar parte de quienes muestran al mundo sus sentimientos. 
+            Si quieres más información, visita nuestros otros apartados, donde encontrarás más detalles sobre "Muñeca".
+        </p>
+        
+        <!-- Separador para Promociones -->
+        <hr style="border: 1px solid #a0a0a0; margin: 40px 0;">
+
+        <!-- Promociones -->
+        <h2 style="margin-bottom: 20px;">Promociones</h2>
+                
+        <!-- Logo debajo del título Promociones -->
+        <div style="text-align: center; margin-bottom: 20px;">
+            <img src="https://imgur.com/8l3Ml0m.png" 
+                 alt="Logo de Promociones" 
+                 style="width: 500px;">
+        </div>
+
+        <p style="margin-bottom: 20px;">
+            Muñeca actualmente está participando en el concurso "Emprendo y Aprendo con la CACSPMEC", cooperativa que nos ha abierto 
+            las puertas del conocimiento. Es por ello que no solo queremos destacarnos por la venta de accesorios, 
+            sino también por tener propuestas que ayuden al medio ambiente. 
+        </p>
+        <p style="margin-bottom: 20px;">
+            Junto a esta idea, realizaremos una increíble promoción:
+        </p>
+        <p style="margin-bottom: 20px;">
+            A través de cada pulsera que compres, nosotros entregaremos dos párrafos de un poema de nuestra autoría que invita a la 
+            reflexión y concientización de las consecuencias que obtendremos si no buscamos soluciones que aporten al medio ambiente.
+        </p>
+        <p style="margin-bottom: 20px;">
+            En total son 10 párrafos para descifrar el poema completo. Encuentra todos y, a cambio, 
+            llévate un par de pulseras personalizadas completamente gratis con lo que gustes del catálogo.
+        </p>
+
+        <!-- Separador para Encuestas -->
+        <hr style="border: 1px solid #a0a0a0; margin: 40px 0;">
+
+        <!-- Promociones -->
+        <h2 style="margin-bottom: 20px;">Encuesta</h2>
+
+        <p style="margin-bottom: 20px;">
+            ¡Tu opinión es importante para nosotros!
+        </p>
+        <p style="margin-bottom: 20px;">
+            Al ser un emprendimiento nuevo, muñeca busca experiencia y conocimientos, por lo que nos ayudaría muchísimo que puedas completar esta pequeña encuesta, así nosotros podremos mejorar a futuro y darte un mejor servicio. Muchas gracias por tomar un poco de tu tiempo para realizarla.
+        </p>
+        <p style="margin-bottom: 40px; text-align: center;">
+            <a href="https://docs.google.com/forms/d/1jBKseiW3HcnLjVESj3qO6kb2qSxLOWH1Btf_OPCsCbM/edit?usp=drivesdk " target="_blank" style="text-decoration: none; font-size: 1.2em; font-weight: bold; color: #007BFF;">
+                Danos tu opinión dandole Click Aqui!.
+            </a>
+        </p>
+
+        <hr style="border: 1px solid #a0a0a0; margin: 40px 0;">
+    </div>
+</div>
+
+    <!-- Sección Catálogo -->
+<div id="catalogo" class="container">
+    <div class="section">
+        <!-- Título principal -->
+        <h2 style="text-align: center; margin-bottom: 20px;">Nuestro Catálogo</h2>
+        
+        <!-- Texto introductorio -->
+        <p style="margin-bottom: 20px;">
+            Tenemos:
+        </p>
+        <ul style="margin-bottom: 20px; line-height: 1.8;">
+            <p>-  Amplia variedad de colores de hilo para escoger.</p>
+            <p>-  Distintos tipos de letras para seleccionar.</p>
+            <p>-  Diferentes diseños de dijes para probar.</p>
+        </ul>
+        <p style="margin-bottom: 20px;">
+            Así que si quieres compartir con quienes más amas, revisa nuestro catálogo completo disponible en WhatsApp presionando el siguiente icono::
+        </p>
+        <p style="margin-bottom: 40px; text-align: center;">
+            <a href="https://wa.me/c/593999797881" target="_blank" style="text-decoration: none;">
+                <img src="https://imgur.com/d8uGJ3x.png" alt="WhatsApp" class="icon" 
+                     style="max-width: 100%; height: auto; width: 75px;">
+            </a>
+        </p>                      
+        <p style="margin-bottom: 40px;">
+            ¡Y obtén información sobre precios, preguntas o inquietudes que tengas!
+        </p>
+        <p style="margin-bottom: 40px;">
+            Aquí te dejamos algunos ejemplos de lo que ofrecemos:
+        </p>
+        
+        <!-- Mini secciones -->
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+            <!-- Mini sección 1 -->
+            <div style="width: 300px; text-align: center; border: 1px solid #ccc; padding: 20px; border-radius: 8px;">
+                <img src="https://imgur.com/Wfh5hTd.png" alt="Ejemplo 1" style="width: 100%; margin-bottom: 10px;">
+                <h2>Hilos</h2>
+            </div>
+            
+            <!-- Mini sección 6 -->
+            <div style="width: 300px; text-align: center; border: 1px solid #ccc; padding: 20px; border-radius: 8px;">
+                <img src="https://imgur.com/Wfh5hTd.png" alt="Ejemplo 6" style="width: 100%; margin-bottom: 10px;">
+                <h2>Cuentas - Letras</h2>
+            </div>
+            
+            <!-- Mini sección 2 -->
+            <div style="width: 300px; text-align: center; border: 1px solid #ccc; padding: 20px; border-radius: 8px;">
+                <img src="https://imgur.com/ZaevlLl.png" alt="Ejemplo 2" style="width: 100%; margin-bottom: 10px;">
+                <h2>Cuentas - Corazónes</h2>
+            </div>
+            
+            <!-- Mini sección 3 -->
+            <div style="width: 300px; text-align: center; border: 1px solid #ccc; padding: 20px; border-radius: 8px;">
+                <img src="https://imgur.com/HC8AO5K.png" alt="Ejemplo 3" style="width: 100%; margin-bottom: 10px;">
+                <h2>Perlas</h2>
+            </div>
+            
+            <!-- Mini sección 4 -->
+            <div style="width: 300px; text-align: center; border: 1px solid #ccc; padding: 20px; border-radius: 8px;">
+                <img src="https://imgur.com/tXjfULc.png" alt="Ejemplo 4" style="width: 100%; margin-bottom: 10px;">
+                <h2>Dijes - Infinito</h2>
+            </div>
+            
+            <!-- Mini sección 5 -->
+            <div style="width: 300px; text-align: center; border: 1px solid #ccc; padding: 20px; border-radius: 8px;">
+                <img src="https://imgur.com/sBYWOI4.png" alt="Ejemplo 5" style="width: 100%; margin-bottom: 10px;">
+                <h2>Dijes - Corazón</h2>
+            </div>
+        </div>
+        
+        <!-- Texto final -->
+        <hr style="border: 1px solid #ccc; margin: 20px 0;">
+        <p style="margin-top: 20px; font-style: italic; color: #000000; text-align: center;">
+            Cabe aclarar que el precio reflejado en nuestro WhatsApp no siempre corresponde al que debe ser cancelado, 
+            toda pulsera costará $0,75 ctvs.
+        </p>
+        <p style="margin-top: 20px; font-style: italic; color: #000000; text-align: center;">
+            El precio anunciado está sujeto a cambios en un futuro.
+        </p>        
+        <hr style="border: 1px solid #ccc; margin: 20px 0;">
+    </div>
+</div>
+
+<div id="contacto" class="container" style="padding: 40px 0; background-color: #f9f9f9;">
+    <div class="section" style="text-align: center; max-width: 900px; margin: 0 auto; padding: 20px;">
+        <!-- Título y Descripción -->
+        <h2 style="font-size: 2em; font-weight: 600; color: #333; margin-bottom: 15px;">¡Síguenos en nuestras redes sociales!</h2>
+        <p style="font-size: 1.2em; color: #313131; line-height: 1.6; margin-bottom: 30px;">
+            Encuentra nuestra marca en las principales plataformas sociales y mantente al tanto de todas las novedades, promociones y más.
+        </p>
+
+        <!-- Iconos de Redes Sociales -->
+        <div class="social-icons" style="display: flex; justify-content: center; gap: 25px; margin-bottom: 40px;">
+            <a href="https://www.tiktok.com/@muneca.pulseras" target="_blank" aria-label="TikTok" style="display: flex; justify-content: center; align-items: center;">
+                <img src="https://static.vecteezy.com/system/resources/previews/023/986/492/non_2x/tiktok-logo-tiktok-logo-transparent-tiktok-icon-transparent-free-free-png.png" alt="TikTok" class="icon" style="width: 50px; height: 50px; transition: transform 0.3s ease-in-out;">
+            </a>
+            <a href="https://www.instagram.com/muneca_pulseras" target="_blank" aria-label="Instagram" style="display: flex; justify-content: center; align-items: center;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="icon" style="width: 50px; height: 50px; transition: transform 0.3s ease-in-out;">
+            </a>
+        </div>
+
+        <!-- Sección de Contacto por Correo -->
+        <p style="font-size: 1.2em; color: #313131; line-height: 1.6; margin-bottom: 20px;">
+            Si tienes alguna consulta, duda, sugerencia o comentario, no dudes en escribirnos. Estamos aquí para ayudarte.
+        </p>
+        
+        <!-- Estilo del Correo -->
+        <a href="mailto:muneca.pulseras@gmail.com" style="text-decoration: none; color: inherit;">
+            <div style="font-size: 1.4em; font-weight: bold; color: #fff; background-color: #008CBA; padding: 15px 30px; border-radius: 5px; transition: background-color 0.3s ease-in-out; display: inline-block; margin-top: 20px;">
+                Envíanos un correo: <span style="color: #f0f0f0;">muneca.pulseras@gmail.com</span>
+            </div>
+        </a>
+
+        <!-- Efecto hover para el correo -->
+        <style>
+            a:hover div {
+                background-color: #005f73; /* Cambio de color de fondo en hover */
+            }
+
+            .social-icons a:hover img {
+                transform: scale(1.1); /* Efecto de aumentar el tamaño de los iconos en hover */
+            }
+        </style>
+                <hr style="border: 1px solid #ccc; margin: 20px 0;">
+                <p style="margin-top: 20px; font-style: italic; color: #000000; text-align: center;">
+                    Recuerda presionando encima de los iconos te lleva directamente a nuestros perfiles de las diferentes Redes Sociales!.
+                </p>
+                <hr style="border: 1px solid #ccc; margin: 20px 0;">
+    </div>
+</div>
+
+
+
+    <footer>
+        <p>© Muñeca. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Oculta todas las secciones
+            const sections = document.querySelectorAll('.container');
+            sections.forEach(section => {
+                section.classList.remove('visible');
+            });
+
+            // Muestra la sección seleccionada
+            const selectedSection = document.getElementById(sectionId);
+            selectedSection.classList.add('visible');
+        }
+    </script>
+
+</body>
+</html>
